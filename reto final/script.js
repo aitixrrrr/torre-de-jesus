@@ -92,7 +92,6 @@ if(scrollBtn){
     });
 }
 
-// Versión segura y optimizada para Lighthouse de la síntesis de voz
 function speak(text, lang = "es-ES") {
     if ("speechSynthesis" in window) {
         try {
@@ -139,3 +138,18 @@ if(newsletterForm) {
         }
     });
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const cookieBanner = document.getElementById("cookie-banner");
+    const acceptBtn = document.getElementById("accept-cookies");
+
+    if (!localStorage.getItem("cookiesAceptadas") && cookieBanner) {
+        cookieBanner.style.display = "block";
+    }
+
+    if (acceptBtn) {
+        acceptBtn.addEventListener("click", () => {
+            localStorage.setItem("cookiesAceptadas", "true");
+            cookieBanner.style.display = "none";
+        });
+    }
+});

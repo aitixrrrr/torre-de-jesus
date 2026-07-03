@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Bloquear el rastreo de la página de error 404
+Disallow: /404.html
+
+# Enlace al sitemap de tu web
+Sitemap: https://tudominio.com/sitemap.xml
