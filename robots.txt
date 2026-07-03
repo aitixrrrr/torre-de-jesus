@@ -5,4 +5,4 @@ Allow: /
 Disallow: /404.html
 
 # Enlace al sitemap de tu web
-Sitemap: https://torrejesus.netlify.app/
+Sitemap: https://torre-de-jesus-five.vercel.app/
