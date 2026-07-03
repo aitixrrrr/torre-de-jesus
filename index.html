@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torre de Jesús - Sagrada Familia</title>
+    <meta name="description" content="Descubre la Torre de Jesucristo, la torre más alta de la Basílica de la Sagrada Familia con una altura final prevista de 172,5 metros.">
+    <meta name="author" content="Actividad educativa">
+    <meta name="keywords" content="Sagrada Familia, Torre de Jesucristo, Antoni Gaudi, Barcelona, arquitectura">
+    
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="canonical" href="https://tudominio.com/index.html">
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="image" href="img1-torre.webp" fetchpriority="high">    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script defer>
+    window.addEventListener("DOMContentLoaded", () => {
+        emailjs.init("EMHMps3V3etO7-Eak");
+    });
+    </script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar" aria-label="Navegación principal">
+        <a href="#inicio" class="navbar-logo">⛪ Sagrada Familia</a>
+        <button class="navbar-toggle" id="js-navbar-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+            ☰
+        </button>
+        <ul class="navbar-menu" id="js-menu">
+            <li class="navbar-item"><a href="#inicio">Inicio</a></li>
+            <li class="navbar-item"><a href="#datos-clave">Datos Clave</a></li>
+            <li class="navbar-item"><a href="#comparativa">Comparativa</a></li>
+            <li class="navbar-item"><a href="#galeria">Galería</a></li>
+            <li class="navbar-item"><a href="#boletin">Boletín</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio">
+        <h1 aria-label="Torre de Jesucristo, Sagrada Familia">🏗️ Torre de Jesucristo</h1>
+        <h2>La Sagrada Familia · Barcelona</h2>
+    </header>
+
+    <main>
+
+        <img class="imagen-torre" 
+             src="img1-torre.webp" 
+             width="600"
+             height="400"
+             alt="Perspectiva exterior ascendente de la aguja central..."
+             fetchpriority="high">
+
+        <p>
+            La <strong>Torre de Jesucristo</strong> es la torre más alta de la Basílica de la Sagrada Familia, 
+            diseñana por <em>Antoni Gaudí</em>. Su altura será de <strong>172,5 metros</strong> cuando esté 
+            finalizada, convirtiéndola en la torre de iglesia más alta del mundo.
+        </p>
+
+        <section id="datos-clave" class="info-box" aria-label="Datos clave de la torre">
+            <h3>📐 Datos clave</h3>
+            <ul>
+                <li><strong>Altura:</strong> 172,5 m</li>
+                <li><strong>Diseño:</strong> Antoni Gaudí</li>
+                <li><strong>Inicio construcción:</strong> 1882</li>
+                <li><strong>Finalización prevista:</strong> 2026</li>
+            </ul>
+        </section>
+
+        <section id="comparativa" aria-label="Tabla comparativa de torres">
+            <h2>Comparativa de torres</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Torre</th>
+                        <th scope="col">Altura (m)</th>
+                        <th scope="col">Año finalización</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Jesucristo</strong></td>
+                        <td>172,5</td>
+                        <td>2026</td>
+                    </tr>
+                    <tr>
+                        <td>Virgen María</td>
+                        <td>138</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>San Marcos</td>
+                        <td>135</td>
+                        <td>2025</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <img src="img2.webp" width="600" height="400" loading="lazy" alt="Detalle de los acabados de piedra en la fachada exterior del templo" class="imagen-torre">
+
+        <section id="galeria" aria-label="Galería fotográfica de la arquitectura">
+            <h2>Galería arquitectónica</h2>
+            
+            <div class="carrusel-contenedor">
+                <button class="carrusel-btn carrusel-prev" id="btnPrev" aria-label="Imagen anterior">❮</button>
+                <button class="carrusel-btn carrusel-next" id="btnNext" aria-label="Imagen siguiente">❯</button>
+                
+                <div class="carrusel-diapositivas" id="carruselSlides">
+                    <div class="carrusel-slide">
+                        <img src="img3.webp" width="900" height="500" loading="lazy" alt="Grupos de esculturas talladas en la piedra de la Fachada del Nacimiento">
+                    </div>
+                    <div class="carrusel-slide">
+                        <img src="img4.webp" width="900" height="500" loading="lazy" alt="Bóvedas hiperboloides en el techo del interior de la Basílica que imitan un bosque">
+                    </div>
+                    <div class="carrusel-slide">
+                        <img src="img5.webp" width="900" height="500" loading="lazy" alt="Efecto de la luz solar filtrándose a través de los vitrales polícromos de la nave">
+                    </div>
+                    <div class="carrusel-slide">
+                        <img src="img6.webp" width="900" height="500" loading="lazy" alt="Vista aérea completa de la planta de la Sagrada Familia integrada en el Eixample">
+                    </div>
+                </div>
+
+                <div class="carrusel-indicadores" id="carruselIndicadores">
+                    <button class="indicador activo" data-slide="0" aria-label="Ir a la imagen 1"></button>
+                    <button class="indicador" data-slide="1" aria-label="Ir a la imagen 2"></button>
+                    <button class="indicador" data-slide="2" aria-label="Ir a la imagen 3"></button>
+                    <button class="indicador" data-slide="3" aria-label="Ir a la imagen 4"></button>
+                </div>
+            </div>
+        </section>
+
+        <p>Más información: <a href="https://sagradafamilia.org" target="_blank" rel="noopener" aria-label="Visitar el sitio web oficial de la Sagrada Familia, abre en ventana nueva">Visita el sitio web oficial de la Sagrada Familia</a></p>
+
+        <button class="btn" onclick="alert('¡Gracias por tu interés!')" aria-label="Descubre más información sobre el proyecto">Descubre más</button>
+
+        <section id="boletin" class="info-box" style="border-style: dashed;" aria-label="Formulario de suscripción al boletín informativo">
+            <h3>Suscríbete a nuestro boletín</h3>
+            <form id="form-newsletter">
+                <label for="email-boletin">Correo electrónico:</label>
+                <input type="email" id="email-boletin" placeholder="ejemplo@correo.com" style="width:80%; max-width: 400px;" required aria-label="Introduce tu dirección de correo electrónico">
+                <button type="submit" style="background-color:#50362a; color:white; padding:12px 30px; font-size:22px; border:none; cursor:pointer; font-weight: bold; margin-left: 5px; border-radius: 4px; min-width: 48px; min-height: 48px;" aria-label="Enviar formulario de suscripción">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <a href="#" class="scroll-to-top" id="scrollTopBtn">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        <span class="visually-hidden">Volver al inicio de la página</span>
+    </a>
+
+    <footer>
+        <p>© 2026 · Actividad educativa sobre optimización web</p>
+        <p style="font-size:12px; opacity: 0.8;">Diseñado para cumplir los estándares de WAVE y Lighthouse</p>
+    </footer>
+    <div id="cookie-banner" class="cookie-banner" aria-live="polite">
+        <div class="cookie-content">
+            <p>Utilizamos cookies propias y de terceros para mejorar tu experiencia. Al continuar navegando, aceptas nuestra <a href="cookies.html">Política de Cookies</a>.</p>
+            <button id="accept-cookies" class="cookie-btn">Aceptar</button>
+        </div>
+    </div>
+</body>
+</html>
